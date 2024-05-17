@@ -10,6 +10,19 @@ namespace xTuner
     {
         static void Main(string[] args)
         {
+
+            try
+            {
+
+
+                myHttpServer.Start();
+
+            }
+            catch (Exception ex)
+            {
+                    Console.WriteLine(ex.Message);
+
+            }
         }
     }
 }
